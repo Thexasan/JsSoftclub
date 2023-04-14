@@ -228,14 +228,39 @@
 // console.log(equal(1,4,3));
 
 //*task12
-let isSymetr = function (n) {  
-  for(let i =n;i>0;Math.floor(i/=10)){
-    let repeat = i%10
-    answer = (repeat%10)+n
+// let answer = 0
+// let isSymetr = function (n) {  
+//   for(let i =n;i>0;i=Math.floor(i/10)){
+//     let repeat = i%10
+//     answer = (answer*10)+repeat
+//   }
+//   if(answer=== n){
+//     return true
+//   }
+//   else{
+//     return false
+//   }
+// }
+// console.log(isSymetr(7226));
+
+//13task
+let countPrimes = (num) => {
+  let count = 0;
+  for (let i = 2; i <= num; i++) {
+      let isPrime = true;
+      for (let j = 2; j < i; j++) {
+          if (i % j === 0) {
+              isPrime = false;
+              break;
+          }
+      }
+      if (isPrime) {
+          count++;
+      }
   }
-  return n==answer?true:false
+  return count;
 }
-console.log(isSymetr(7226));
+console.log(countPrimes(10));
 
 
 //14
