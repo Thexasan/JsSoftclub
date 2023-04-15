@@ -118,4 +118,4 @@
 //       return gcd(b, a % b);
 //     }
 //   }
-//   console.log(gcd(8,12));
+//   console.log(gcd(32,8));
