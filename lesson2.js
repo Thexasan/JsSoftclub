@@ -10,7 +10,7 @@
 
                     //hw
                 //task1
-// console.log(feboacci(7));
+// console.log(feboacci(5));
 // function feboacci(n){
 //     if(n<=1){
 //         return n
@@ -21,6 +21,7 @@
 //     }
 // }
 
+
 //task2
 // function sumDigit(n){
 //     if(n<=1){
@@ -28,15 +29,15 @@
 //     }
 //     return sumDigit(Math.floor(n/10))+ n%10
 // }
-// console.log(sumDigit(444));
+// console.log(sumDigit(444444));
 
 //task3
-// function multiply(a,b){
-//     return function(){
+// function multiply(a){
+//     return function(b){
 //         return a*b
 //     }
 // }
-// console.log(multiply(10,2)());
+// console.log(multiply(10)(2));
 
 //task4
 // function makkePlusFunc(n){
