@@ -81,3 +81,8 @@
 //     return sum2
 // }
 // console.log(sunOf(136));
+
+function get(...arr){
+    return Math.min(...arr)
+}
+console.log(get(1,2,3,4,5,6));

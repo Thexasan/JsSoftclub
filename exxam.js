@@ -24,20 +24,22 @@
 // }
 // console.log(sevenB(56));
 
-//task3
-function oddOrEven(num) {
-    let sumOfDigits = 0;  
-    for (let i = num; i >0; i=Math.floor(i/10)) {
-      sumOfDigits += parseInt(i);
-    }
+// //task3
+// function oddOrEven(num) {
+//     let sumOfDigits = 0;  
+//     for (let i = num; i >0; i=Math.floor(i/10)) {
+//       sumOfDigits += parseInt(i);
+//     }
   
-    if (sumOfDigits % 2 === 0) {
-      return "Evenish";
-    } else {
-      return "odd";
-    }
-  }
-  console.log(oddOrEven(443));
+//     if (sumOfDigits % 2 === 0) {
+//       return "Evenish";
+//     } else {
+//       return "odd";
+//     }
+//   }
+//   console.log(oddOrEven(443));
+
+
 
 //task4
 // function sumNumbers(a=0){
