@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  animation-name: slide-in;
+  animation-duration: 0.4s;
+}
+
+/* Анимация появления*/
+ @keyframes slide-in {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}  
+</style>
+<body>
+    <div class="box">
+        <h1>User Table</h1>
+            <h2>Add User</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            <br>
+            <label for="image">Image:</label>
+            <input type="text" id="image">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone">
+            <br>
+            <button  id="addUserBtn">Add User</button>
+        
+        <table class="table">
+            <thead class="thead">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Image</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit User</h2>
+            <form>
+                <label for="editName">Name:</label>
+                <input type="text" id="editName">
+                <br>
+                <label for="editSurname">Surname:</label>
+                <input type="text" id="editSurname">
+                <br>
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail">
+                <br>
+                <label for="editAge">Age:</label>
+                <input type="number" id="editAge">
+                <br>
+                <label for="editImage">Image:</label>
+                <input type="text" id="editImage">
+                <br>
+                <button type="submit" id="saveEditBtn">Save</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="hwDom.js"></script>
+</body>
+</html>

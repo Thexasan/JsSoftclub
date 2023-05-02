@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .tr:hover{
+    background-color: rgb(152, 222, 240);
+    color: rgb(0, 0, 0);
+   }
+ 
+   .tr{
+    display: flex;
+    gap: 130px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+   }
+   .con{
+    display: flex;
+    gap: 90px;
+   }
+   .con>td{
+    padding: 10px;
+    margin-top: 5px;
+   }
+   .table{
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    border:1px solid gray;
+    height: 20px;
+    background-color: peachpuff;
+
+   }
+   .form1{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+   }
+   .edit{
+    height: 30px;
+    align-self: center;
+   }
+   .del{
+    background:none;
+    border: none;
+    background-color: brown;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: center;
+    height: 30px;
+   }
+   td{
+    display: flex;
+    align-self: center;
+    width: 2vw; 
+    height: 3vh;
+   }
+   .form1{
+    width: fit-content;
+    background-color: cyan;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 1px 1px 5px black;
+   }
+   .add{
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: green;
+    padding: 8px 18px;
+    border-radius: 10px;
+   }
+   .form1>input{
+    padding: 10px;
+   }
+   .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+body{
+    background-color: rgb(157, 255, 206);
+}
+</style>
+<body>
+    <form action="#" class="form1">
+        <label for="img"></label>
+        <input type="text" name="img" placeholder="enter url(img)">
+        <label for="name"></label>
+        <input type="text" name="name" placeholder="enter name">
+        <label for="age"></label>
+        <input type="text" name="age" placeholder="enter age">
+        <label for="job"></label>
+        <input type="text" name="job" placeholder="enter job">
+        <button type="submit" class="add">Add</button>
+    </form>
+    
+    <table class="table">
+        <thead>
+            <tr class="tr">
+                <th>№</th>
+                <th>img</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Job</th>
+                <th>Activities</th>
+            </tr>
+        </thead>
+    <tbody class="userTableBody">
+        <td class="td"></td>
+    </tbody>
+</table>
+
+    
+    <div class="box"></div>
+
+       
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>edit user</p>
+      <form action="#" class="form2">
+        <label for="img"></label>
+        <input type="text" name="img" placeholder="enter url(img)">
+        <label for="name"></label>
+        <input type="text" name="name" placeholder="enter name">
+        <label for="age"></label>
+        <input type="text" name="age" placeholder="enter age">
+        <label for="job"></label>
+        <input type="text" name="job" placeholder="enter job">
+        <button type="submit" class="add">Add</button>
+    </form>
+    
+    </div>
+  
+  </div>
+    
+    <script src="formHw.js"></script>
+</body>
+</html>
