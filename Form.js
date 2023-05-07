@@ -13,11 +13,6 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-
-
-
-
-
 let data = [
     {
         id:1,
