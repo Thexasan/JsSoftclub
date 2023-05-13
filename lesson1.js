@@ -260,7 +260,7 @@ let countPrimes = (num) => {
   }
   return count;
 }
-console.log(countPrimes(10));
+console.log(countPrimes(3));
 
 
 //14
